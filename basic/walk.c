@@ -39,7 +39,6 @@ int main()
         {
             int newRow = row + moves[d][0];
             int newCol = col + moves[d][1];
-
             if (
                 newRow >= 0 && newRow < ROW &&
                 newCol >= 0 && newCol < COLUMN && path[newRow][newCol] == '.')
