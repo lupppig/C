@@ -29,5 +29,6 @@ int power(int value, int exponent)
         half_power = power(value, exponent / 2);
         return half_power * half_power;
     }
+
     return value * power(value, exponent - 1);
 }
