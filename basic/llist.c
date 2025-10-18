@@ -16,6 +16,8 @@ int main(void)
 {
     struct node *first = NULL;
 
+    read_numbers();
+
     free(first);
     return 0;
 }

@@ -58,7 +58,6 @@ int main(void)
 struct part *find_part(int number)
 {
     struct part *p;
-
     for (p = inventory; p != NULL && number > p->number; p = p->next)
         ;
 
@@ -70,7 +69,6 @@ struct part *find_part(int number)
 void insert(void)
 {
     struct part *cur, *prev, *new_node;
-
     new_node = (struct part *)malloc(sizeof(struct part));
 
     if (new_node == NULL)
