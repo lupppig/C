@@ -83,3 +83,15 @@ struct node *delete_from_list(struct node *list, int n)
     free(cur);
     return list;
 }
+
+
+void delete_list(struct node *list)
+{
+
+    for (struct node *p = list; p != NULL; p = p->next)
+    {
+        struct node *next_node = p->next;
+        free(p);
+        p = next_node;
+    }
+}
